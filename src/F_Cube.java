@@ -20,4 +20,14 @@ public class F_Cube extends Forme
 	 * Le cube ne tourne pas - ou plutôt, il tourne mais on ne voit pas la différence en termes de gameplay
 	 */
 	void tourner()	{	}
+
+	void translationGauche()
+	{
+		
+	}
+
+	void translationDroite()
+	{
+		
+	}
 }

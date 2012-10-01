@@ -1,8 +1,14 @@
-// FIXME écrire un commentaire
+/**
+ * 
+ * @author duplanm
+ *
+ *Définition abstraite d'une forme
+ */
 public abstract class Forme
 {
 	// FIXME écrire un commentaire
 	// TODO réfléchir à une gestion sans couleur...
+	// FIXME Est-il possible de faire un genre de variable abstraite, telle que les classes héritant de Forme aient toujours un attribut couleur ?
 	protected int couleur;
 	
 	// FIXME constructeurs ?
@@ -17,6 +23,13 @@ public abstract class Forme
 	 */
 	abstract void tourner();
 	
+	/**
+	 * Translation de la forme vers la gauche, si possible
+	 */
+	abstract void translationGauche();
 	
-	// FIXME déplacer ?
+	/**
+	 * Translation de la forme vers la droite, si possible
+	 */
+	abstract void  translationDroite();
 }

@@ -1,13 +1,13 @@
-// FIXME corriger le commentaire
 /**
- * Tableau à deux dimensions resprésentant la zone de jeu.
+ * Définition de la zone de jeu dans sa globalité
  */
 public class Map
 {
-	// FIXME écrire le commentaire
+	/**
+	 * zdj : zone de jeu représentée par une matrice
+	 */
 	// FIXME initialisation des attributs dans le constructeur
-	// FIXME renommer l'attribut
-	private int zdj[][] = {{0,0,0,0,0,0,0,0,0},
+	private int zoneDeJeu[][] = {{0,0,0,0,0,0,0,0,0},
 							{0,0,0,0,0,0,0,0,0},
 							{0,0,0,0,0,0,0,0,0},
 							{0,0,0,0,0,0,0,0,0},
@@ -18,32 +18,27 @@ public class Map
 	
 	
 	// FIXME constructeurs, méthodes ?
-	
-	// FIXME à supprimer !
-	public void passe1(int x, int y)
+	public Map()
 	{
-		zdj[x][y]=1;
-	}
-
-	// FIXME à supprimer !	
-	public void passe0(int x, int y)
-	{
-		zdj[x][y]=0;
+		
 	}
 	
-	
-	// FIXME à remplacer par la redéfinition de la méthode toString de la classe Object
-	public void affiche()
+	/**
+	 * Redéfinition de toString : affiche la map sous forme de caractères représentant les blocs.
+	 */
+	public String toString()
 	{
 		int i,j;
+		String s = "";
 		for(i=0;i<9;i++)
 		{
 			for(j=0;j<8;j++)
 			{
-				System.out.print(this.zdj[j][i]);
+				s = s + (this.zoneDeJeu[j][i]);
 			}
-			System.out.println("");
+			s = s + '\n';
 		}
+		return s;
 	}
 	
 }

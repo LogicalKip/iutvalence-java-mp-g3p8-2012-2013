@@ -1,11 +1,15 @@
 // FIXME écrire un commentaire
+/**
+ * 
+ * @author duplanm
+ *
+ */
 public class Partie
 {
 	// FIXME écrire un commentaire
 	// FIXME visibilité de l'attribut ?
 	// FIXME initialisation des attributs dans le constructeur
-	// FIXME renommer l'attribut
-	protected Map m = new Map();
+	protected Map map = new Map();
 	
 	
 	// FIXME autres attributs ?
