@@ -1,13 +1,25 @@
-
+// FIXME écrire un commentaire
+/**
+ * @author duplanm
+ *
+ */
 public class Main
 {
-
+	// FIXME compléter le commentaire
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
+		
+		/*
+		 * ce serait pas plutôt tout simplement
+		 *  //while (rejouer())
+		 *  	 new Partie.start();
+		 *  	?
+		 */
+		
+		
 		Map m = new Map();
 		Bloc b1 = new Bloc(0,0);
 		Bloc b2 = new Bloc(1, 0);
