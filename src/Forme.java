@@ -6,15 +6,30 @@
  */
 public abstract class Forme
 {
-	// FIXME écrire un commentaire
-	// TODO réfléchir à une gestion sans couleur...
-	// FIXME Est-il possible de faire un genre de variable abstraite, telle que les classes héritant de Forme aient toujours un attribut couleur ?
-	protected int couleur;
+	/**
+	 * Couleur associée à la forme
+	 */
+	protected Couleur color;
 	
-	// FIXME constructeurs ?
+
+	/**
+	 * @param couleur
+	 * Constructeur qui permet de choisir la couleur de la forme
+	 */
+	public Forme(Couleur couleur)
+	{
+		this.color = couleur;
+	}
+	/**
+	 * Constructeur de base, met la forme en blanc
+	 */
+	public Forme()
+	{
+		this.color = Couleur.BLANC;
+	}
 	
 	/**
-	 * Fait descendre la forme d'un bloc si possible
+	 * Fait descendre la forme, d'un bloc, si possible
 	 */
 	abstract void descendre();
 	
