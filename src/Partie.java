@@ -1,3 +1,5 @@
+// FIXME déplacer dans un paquetage
+
 // FIXME écrire un commentaire
 public class Partie
 {

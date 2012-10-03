@@ -1,3 +1,5 @@
+// FIXME déplacer dans un paquetage
+
 // FIXME corriger le commentaire
 /**
  * Tableau à deux dimensions resprésentant la zone de jeu.

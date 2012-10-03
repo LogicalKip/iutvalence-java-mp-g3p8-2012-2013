@@ -1,3 +1,4 @@
+// FIXME déplacer dans un paquetage
 /**
  * Un seul petit carré ("pixel"). Les formes sont généralement constituées de 4 blocs
  */
