@@ -1,26 +1,32 @@
 // FIXME déplacer dans un paquetage
-
-// FIXME écrire un commentaire
+/**
+ * 
+ * @author duplanm
+ * Classe centrale de l'application
+ */
 public class Partie
 {
-	// FIXME écrire un commentaire
-	// FIXME visibilité de l'attribut ?
-	// FIXME initialisation des attributs dans le constructeur
-	// FIXME renommer l'attribut
-	protected Map m = new Map();
+	/**
+	 * Appel de la classe Map avant initialisation et lancement de la partie
+	 */
+	// TODO On peut déclarer cette variable comme une variable locale à start() ?
+	public Map map;
 	
 	
-	// FIXME autres attributs ?
 	
-	// FIXME écrire un commentaire
+	/**
+	 * Constructeur de la classe Partie
+	 * Définit une map avant initialisation
+	 */
 	public Partie()
 	{
-		// FIXME à compléter
+		this.map = new Map();
 	}
 	
-	// FIXME écrire un commentaire
-	// FIXME visibilité ?
-	void start()
+	/**
+	 * Méthode principale de Partie. 
+	 */
+	public void start()
 	{
 		
 	}

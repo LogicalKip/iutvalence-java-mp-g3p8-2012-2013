@@ -1,51 +1,55 @@
 // FIXME déplacer dans un paquetage
 
-// FIXME corriger le commentaire
 /**
- * Tableau à deux dimensions resprésentant la zone de jeu.
+ * Définition de la zone de jeu dans sa globalité
  */
 public class Map
 {
-	// FIXME écrire le commentaire
-	// FIXME initialisation des attributs dans le constructeur
-	// FIXME renommer l'attribut
-	private int zdj[][] = {{0,0,0,0,0,0,0,0,0},
-							{0,0,0,0,0,0,0,0,0},
-							{0,0,0,0,0,0,0,0,0},
-							{0,0,0,0,0,0,0,0,0},
-							{0,0,0,0,0,0,0,0,0},
-							{0,0,0,0,0,0,0,0,0},
-							{0,0,0,0,0,0,0,0,0},
-							{0,0,0,0,0,0,0,0,0}};
+	/**
+	 * HAUTEUR_MAP : nombre de cases de haut de la grille
+	 */
+	public static final int HAUTEUR_MAP = 8;
+	/**
+	 * LARGEUR_MAP : nombre de cases de large de la grille
+	 */
+	public static final int LARGEUR_MAP = 6;
 	
 	
-	// FIXME constructeurs, méthodes ?
+	/**
+	 * zoneDeJeu : grille du jeu représentée par une matrice de couleurs, éventuellement aucune
+	 */
+	private Couleur zoneDeJeu[][];
 	
-	// FIXME à supprimer !
-	public void passe1(int x, int y)
+	
+	// FIXME méthodes ?
+	/**
+	 * Constructeur sans paramètres : Initialisation de la grille à vide.
+	 */
+	public Map()
 	{
-		zdj[x][y]=1;
-	}
-
-	// FIXME à supprimer !	
-	public void passe0(int x, int y)
-	{
-		zdj[x][y]=0;
+		for (int i = 0 ; i < LARGEUR_MAP ; i++)
+		{
+			for (int j = 0 ; j < HAUTEUR_MAP ; j++)
+				this.zoneDeJeu[i][j] = Couleur.RIEN;
+		}
 	}
 	
-	
-	// FIXME à remplacer par la redéfinition de la méthode toString de la classe Object
-	public void affiche()
+	/**
+	 * Redéfinition de toString : affiche la map sous forme de caractères représentant les blocs.
+	 */
+	public String toString()
 	{
 		int i,j;
-		for(i=0;i<9;i++)
+		String s = "";
+		for(j = 0 ; j < HAUTEUR_MAP ; j ++)
 		{
-			for(j=0;j<8;j++)
+			for(i = 0 ; i < LARGEUR_MAP ; i++)
 			{
-				System.out.print(this.zdj[j][i]);
+				s = s + (this.zoneDeJeu[i][j]);
 			}
-			System.out.println("");
+			s = s + '\n';
 		}
+		return s;
 	}
 	
 }

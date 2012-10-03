@@ -1,19 +1,20 @@
 // FIXME déplacer dans un paquetage
-
-// FIXME compléter le commentaire
 /**
  * @author duplanm
- * Le cube : 
- * 	**
- * 	**
- * 
+ * Définit les différents mouvements possibles avec un cube, et comment ils interviennent dans
+ * la zone de jeu
  */
 public class F_Cube extends Forme
 {
-	// FIXME attributs, constructeurs ?
 	
-	// FIXME public ?
-	void descendre()
+	/**
+	 * Constructeur basé sur la classe supérieure
+	 */
+	public F_Cube()
+	{
+		super(Couleur.JAUNE);
+	}
+	public void descendre()
 	{
 		
 	}
@@ -22,4 +23,14 @@ public class F_Cube extends Forme
 	 * Le cube ne tourne pas - ou plutôt, il tourne mais on ne voit pas la différence en termes de gameplay
 	 */
 	void tourner()	{	}
+
+	void translationGauche()
+	{
+		
+	}
+
+	void translationDroite()
+	{
+		
+	}
 }

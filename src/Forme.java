@@ -1,16 +1,36 @@
 // FIXME déplacer dans un paquetage
-
-// FIXME écrire un commentaire
+/**
+ * 
+ * @author duplanm
+ *
+ *Définition abstraite d'une forme
+ */
 public abstract class Forme
 {
-	// FIXME écrire un commentaire
-	// TODO réfléchir à une gestion sans couleur...
-	protected int couleur;
+	/**
+	 * Couleur associée à la forme
+	 */
+	protected Couleur color;
 	
-	// FIXME constructeurs ?
+
+	/**
+	 * @param couleur
+	 * Constructeur qui permet de choisir la couleur de la forme
+	 */
+	public Forme(Couleur couleur)
+	{
+		this.color = couleur;
+	}
+	/**
+	 * Constructeur de base, met la forme en blanc
+	 */
+	public Forme()
+	{
+		this.color = Couleur.BLANC;
+	}
 	
 	/**
-	 * Fait descendre la forme d'un bloc si possible
+	 * Fait descendre la forme, d'un bloc, si possible
 	 */
 	abstract void descendre();
 	
@@ -19,6 +39,13 @@ public abstract class Forme
 	 */
 	abstract void tourner();
 	
+	/**
+	 * Translation de la forme vers la gauche, si possible
+	 */
+	abstract void translationGauche();
 	
-	// FIXME déplacer ?
+	/**
+	 * Translation de la forme vers la droite, si possible
+	 */
+	abstract void  translationDroite();
 }
