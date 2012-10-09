@@ -1,13 +1,16 @@
-// FIXME déplacer dans un paquetage
+// FIXME déplacer dans un paquetage différent
 /**
- * @author duplanm
  * Classe "executable", celle qui va lancer l'application
+ * @author duplanm
+
  */
 public class Main
 {
+	// FIXME compléter le commentaire
 	/**
-	 * @param args
 	 * Fonction principale : lancement du jeu
+	 * @param args
+	 * 
 	 */
 	public static void main(String[] args)
 	{

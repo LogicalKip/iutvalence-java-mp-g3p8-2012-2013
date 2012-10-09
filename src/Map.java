@@ -6,22 +6,21 @@
 public class Map
 {
 	/**
-	 * HAUTEUR_MAP : nombre de cases de haut de la grille
+	 * Nnombre de cases de haut de la grille 
 	 */
 	public static final int HAUTEUR_MAP = 8;
 	/**
-	 * LARGEUR_MAP : nombre de cases de large de la grille
+	 * Nombre de cases de large de la grille 
 	 */
 	public static final int LARGEUR_MAP = 6;
 	
 	
 	/**
-	 * zoneDeJeu : grille du jeu représentée par une matrice de couleurs, éventuellement aucune
+	 * Grille du jeu représentée par une matrice de couleurs, éventuellement aucune
 	 */
-	private Couleur zoneDeJeu[][];
+	private Couleur[][] zoneDeJeu;
 	
 	
-	// FIXME méthodes ?
 	/**
 	 * Constructeur sans paramètres : Initialisation de la grille à vide.
 	 */

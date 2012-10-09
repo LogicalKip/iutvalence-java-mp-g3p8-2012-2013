@@ -1,7 +1,8 @@
 // FIXME déplacer dans un paquetage
 /**
+ * Enumération des différentes couleurs que peut avoir une forme, et éventuellement autre chose
  * @author duplanm
- *Enumération des différentes couleurs que peut avoir une forme, et éventuellement autre chose
+ *
  */
 public enum Couleur
 {
