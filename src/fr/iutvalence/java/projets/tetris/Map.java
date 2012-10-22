@@ -1,12 +1,14 @@
-// FIXME déplacer dans un paquetage
+package fr.iutvalence.java.projets.tetris;
+// FIXME (FIXED) déplacer dans un paquetage
 
 /**
  * Définition de la zone de jeu dans sa globalité
+ * Chaque case de Map contient une Couleur, éventuellement RIEN.
  */
 public class Map
 {
 	/**
-	 * Nnombre de cases de haut de la grille 
+	 * Nombre de cases de haut de la grille 
 	 */
 	public static final int HAUTEUR_MAP = 8;
 	/**

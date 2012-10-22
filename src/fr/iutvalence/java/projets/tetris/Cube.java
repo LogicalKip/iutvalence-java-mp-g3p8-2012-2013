@@ -1,44 +1,28 @@
-// FIXME déplacer dans un paquetage
+package fr.iutvalence.java.projets.tetris;
+// FIXME (FIXED) déplacer dans un paquetage
 
-// FIXME détailler le commentaire (expliquer en quoi F_Cube est une forme particulière)
+// FIXME (FIXED) détailler le commentaire (expliquer en quoi F_Cube est une forme particulière)
 /**
  * Définit les différents mouvements possibles avec un cube, et comment ils interviennent dans
- * la zone de jeu
+ * la zone de jeu.  Un Cube peut être représenté comme suit :
+ *							##	
+ * 							##
  * @author duplanm
  * 
  */
-// FIXME respecter les conventions d'écriture
-public class F_Cube extends Forme
+// FIXME (FIXED) respecter les conventions d'écriture
+public class Cube extends Forme
 {
-	
+	private final static Position[][] REPRESENTATIONS = new Position[][]
+			{
+				{new Position(0,0), new Position (1,0), new Position(0,1), new Position(1,1)}
+			};
 	/**
 	 * Constructeur basé sur la classe supérieure
 	 */
-	public F_Cube()
+	public Cube(Position origine)
 	{
-		super(Couleur.JAUNE);
-	}
-	public void descendre()
-	{
-		
-	}
-
-	/**
-	 * Le cube ne tourne pas - ou plutôt, il tourne mais on ne voit pas la différence en termes de gameplay
-	 */
-	// FIXME visibilité ?
-	void tourner()	{	}
-
-	// FIXME visibilité ?
-	void translationGauche()
-	{
-		
-	}
-
-	// FIXME visibilité ?
-	void translationDroite()
-	{
-		
+		super(origine, Couleur.JAUNE, REPRESENTATIONS);
 	}
 	
 }

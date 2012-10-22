@@ -1,4 +1,6 @@
-// FIXME déplacer dans un paquetage différent
+// FIXME (FIXED) déplacer dans un paquetage différent
+package fr.iutvalence.java.projets.tetris;
+
 /**
  * Classe "executable", celle qui va lancer l'application
  * @author duplanm
@@ -6,9 +8,10 @@
  */
 public class Main
 {
-	// FIXME compléter le commentaire
+	// FIXME (FIXED) compléter le commentaire
 	/**
-	 * Fonction principale : lancement du jeu
+	 * Fonction principale : Création et lancement d'une Partie (pour l'instant)
+	 * TODO Faire un menu contenant Jouer, Options, Quitter
 	 * @param args
 	 * 
 	 */
