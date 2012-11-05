@@ -14,7 +14,7 @@ public class Map
 	/**
 	 * Nombre de cases de large de la grille 
 	 */
-	public static final int LARGEUR_MAP = 6;
+	public static final int LARGEUR_MAP = 7;
 	
 	
 	/**

@@ -1,6 +1,5 @@
 package fr.iutvalence.java.projets.tetris;
 
-import java.util.Arrays;
 // FIXME (FIXED) déplacer dans un paquetage
 
 // FIXME (FIXED) détailler le commentaire (ce qui caractérise une forme)
@@ -54,10 +53,13 @@ public abstract class Forme
 	}
 	
 	/**
-	 * Fait descendre la forme, d'un bloc, si possible
+	 * Fait descendre la forme, d'un bloc, si possible.
+	 * Une vérification préalable est INDISPENSABLE avant d'appeler la méthode.
 	 */
 	// FIXME (FIXED) visibilité ?
-	public  void descendre() {};
+	public void descendre() {
+		this.hg.setY(this.hg.getY()+1);
+	};
 	
 	/**
 	 * Tourne la forme vers la droite, si possible (dépend de la forme en question).
@@ -69,24 +71,47 @@ public abstract class Forme
 	}
 	
 	/**
-	 * Translation de la forme vers la gauche, si possible
+	 * Translation de la forme vers la gauche, si possible.
+	 * Une vérification préalable est INDISPENSABLE avant d'appeler la méthode.
 	 */
 	// FIXME (FIXED) visibilité ?
-	public  void translationGauche(){};
+	public void translationGauche(){
+		this.hg.setX(this.hg.getX()-1);
+	};
 	
 	/**
-	 * Translation de la forme vers la droite, si possible
+	 * Translation de la forme vers la droite, si possible.
+	 *  Une vérification préalable est INDISPENSABLE avant d'appeler la méthode.
 	 */
 	// FIXME (FIXED) visibilité ?
-	public  void  translationDroite(){}
+	public void translationDroite(){
+		this.hg.setX(this.hg.getX()+1);
+	}
 
 	@Override
 	public String toString()
 	{
-		return "Forme [color=" + this.color + ", representations=" + 
-				Arrays.toString(this.representations) + ", hg=" + this.hg
-				+ ", representationCourante=" + this.representationCourante + "]";
+		String s = "";
+		boolean b;
+		for (int j = 0 ; j < Map.HAUTEUR_MAP ; j++)
+		{
+			for (int i = 0 ; i < Map.LARGEUR_MAP ; i++)
+			{		
+				b = false;
+				for (int k = 0 ; k <= 3 ; k++)
+				{
+					if (this.representations[this.representationCourante][k].getX() + this.hg.getX() == i && 
+						this.representations[this.representationCourante][k].getY() + this.hg.getY() == j)
+						{
+							s += '#';
+							b=true;
+						}				
+				}
+				if(! b)
+					s += '°';	
+			}
+			s += '\n';
+		}
+		return s;
 	};
-	
-	
 }

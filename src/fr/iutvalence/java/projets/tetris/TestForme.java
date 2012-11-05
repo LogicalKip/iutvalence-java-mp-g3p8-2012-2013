@@ -12,12 +12,22 @@ public class TestForme
 	 */
 	public static void main(String[] args)
 	{
-		Forme f = new Barre(new Position(3,3));
+		Forme f = new T(new Position(3,3));
 		
 		System.out.println(f);
 		f.tourner();
 		System.out.println(f);
-		f.tourner();
+
+		f.descendre();
+		f.descendre();
+		System.out.println(f);
+		f.translationGauche();
+		System.out.println(f);
+		f.translationDroite();
+		System.out.println(f);
+		f.translationDroite();
+		System.out.println(f);
+		f.translationDroite();
 		System.out.println(f);
 	}
 
