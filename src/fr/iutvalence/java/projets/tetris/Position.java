@@ -68,7 +68,7 @@ public class Position
 	@Override
 	public String toString()
 	{
-		return "Position [x=" + x + ", y=" + y + "]";
+		return "Position [x=" + this.x + ", y=" + this.y + "]";
 	}
 	
 	

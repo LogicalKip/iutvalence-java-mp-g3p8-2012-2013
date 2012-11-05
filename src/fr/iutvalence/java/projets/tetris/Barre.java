@@ -12,6 +12,9 @@ package fr.iutvalence.java.projets.tetris;
 // FIXME (FIXED) respecter les conventions d'écriture
 public class Barre extends Forme
 {
+	/**
+	 * Définit les différentes orientations ainsi que la position des blocs dans la forme.
+	 */
 	private final static Position[][] REPRESENTATIONS = new Position[][]
 			{
 				{new Position(0,0), new Position (1,0), new Position(2,0), new Position(3,0)},
@@ -19,6 +22,7 @@ public class Barre extends Forme
 			};
 	/**
 	 * Constructeur basé sur la classe supérieure
+	 * @param origine représentation du coin supérieur gauche
 	 */
 	public Barre(Position origine)
 	{

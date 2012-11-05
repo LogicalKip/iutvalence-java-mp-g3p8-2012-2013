@@ -30,7 +30,16 @@ public enum Couleur
 	/**
 	 * La couleur blanche
 	 */
-	BLANC;
+	BLANC,
+	/**
+	 * La couleur orange
+	 */
+	ORANGE,
+	/**
+	 * la couleur violet
+	 */
+	VIOLET
+	;
 }
 
 

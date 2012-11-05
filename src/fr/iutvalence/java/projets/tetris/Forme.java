@@ -28,18 +28,22 @@ public abstract class Forme
 	
 	/**
 	 * Définit la position repère de la forme, à savoir le x et le y du bloc le plus à gauche.
-	 * S'il y a plusieurs blocs plus à gauche, on choisi le plus en haut.
+	 * S'il y a plusieurs blocs plus à gauche, on choisit le plus en haut.
 	 */
 	private Position hg;
 	
+	/**
+	 * L'indice du premier crochet de la variable representations. Correspond à l'orientation
+	 * courante de la forme.
+	 */
 	private int representationCourante;
 
-	
-	
-	//TODO rajouter une var orientationCourante
 	/**
-	 * @param couleur
-	 * Constructeur qui permet de choisir la couleur de la forme
+	 * Constructeur qui permet de créer une forme en définissant son origine (bloc supérieur gauche),
+	 * sa couleur ainsi que sa représentation (appelé par la sous-forme)
+	 * @param origine coordonnée représentant le coin supérieur gauche de la forme
+	 * @param couleur appel à l'enumération Couleur, la couleur qu'aura la forme 
+	 * @param representations définit la structure de la forme selon les orientations
 	 */
 	protected Forme(Position origine, Couleur couleur, Position[][] representations)
 	{
@@ -79,8 +83,9 @@ public abstract class Forme
 	@Override
 	public String toString()
 	{
-		return "Forme [color=" + color + ", representations=" + Arrays.toString(representations) + ", hg=" + hg
-				+ ", representationCourante=" + representationCourante + "]";
+		return "Forme [color=" + this.color + ", representations=" + 
+				Arrays.toString(this.representations) + ", hg=" + this.hg
+				+ ", representationCourante=" + this.representationCourante + "]";
 	};
 	
 	
