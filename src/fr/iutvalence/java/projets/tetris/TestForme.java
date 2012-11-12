@@ -41,6 +41,12 @@ public class TestForme
 		f.translationGauche();
 		System.out.println(f);
 		attendre(tempsAttente);
+		f.tourner();
+		System.out.println(f);
+		attendre(tempsAttente);
+		f.descendre();
+		System.out.println(f);
+		attendre(tempsAttente);
 		f.translationDroite();
 		System.out.println(f);
 		attendre(tempsAttente);
