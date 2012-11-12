@@ -10,11 +10,11 @@ public class Map
 	/**
 	 * Nombre de cases de haut de la grille 
 	 */
-	public static final int HAUTEUR_MAP = 8;
+	public static final int HAUTEUR_MAP = 20;
 	/**
 	 * Nombre de cases de large de la grille 
 	 */
-	public static final int LARGEUR_MAP = 7;
+	public static final int LARGEUR_MAP = 10;
 	
 	
 	/**
@@ -45,9 +45,8 @@ public class Map
 		for(j = 0 ; j < HAUTEUR_MAP ; j ++)
 		{
 			for(i = 0 ; i < LARGEUR_MAP ; i++)
-			{
 				s = s + (this.zoneDeJeu[i][j]);
-			}
+
 			s = s + '\n';
 		}
 		return s;

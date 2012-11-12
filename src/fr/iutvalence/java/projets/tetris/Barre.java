@@ -4,7 +4,7 @@ package fr.iutvalence.java.projets.tetris;
 // FIXME (FIXED) détailler le commentaire (expliquer en quoi F_Barre est une forme particulière)
 /**
  * Définit les différents mouvements possibles avec une barre, et comment ils interviennent dans
- * la zone de jeu.  Une Barre peut être représenté comme suit : 
+ * la zone de jeu.  Une Barre peut être représenté comme suit :  
  *							####
  * @author duplanm
  * 

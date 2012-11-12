@@ -3,7 +3,7 @@ package fr.iutvalence.java.projets.tetris;
 /**
  * @author duplanm
  * Définit les différents mouvements possibles avec un L, et comment ils interviennent dans
- * la zone de jeu. Un L peut être représenté comme suit : 
+ * la zone de jeu. Un L peut être représenté comme suit :  
  *							#	
  * 							#
  * 						  	##

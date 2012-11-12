@@ -3,7 +3,7 @@ package fr.iutvalence.java.projets.tetris;
 
 /**
  * Classe "executable", celle qui va lancer l'application
- * @author duplanm 
+ * @author duplanm  
 
  */
 public class Main

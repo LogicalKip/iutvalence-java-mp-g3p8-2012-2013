@@ -20,8 +20,8 @@ public class Position
 	
 	
 	/**
-	 * @param x
-	 * @param y
+	 * @param x abscisses
+	 * @param y ordonnées
 	 */
 	public Position(int x, int y)
 	{
@@ -73,3 +73,4 @@ public class Position
 	
 	
 }
+ 

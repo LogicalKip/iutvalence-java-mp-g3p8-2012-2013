@@ -1,6 +1,6 @@
 package fr.iutvalence.java.projets.tetris;
 
-// FIXME (FIXED) déplacer dans un paquetage
+// FIXME (FIXED) déplacer dans un paquetage 
 
 // FIXME (FIXED) détailler le commentaire (ce qui caractérise une forme)
 /**
