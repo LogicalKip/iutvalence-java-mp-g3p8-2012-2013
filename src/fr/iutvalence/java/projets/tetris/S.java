@@ -3,7 +3,7 @@ package fr.iutvalence.java.projets.tetris;
 /**
  * @author duplanm
  * Définit les différents mouvements possibles avec un S, et comment ils interviennent dans
- * la zone de jeu. Un S peut être représenté comme suit :
+ * la zone de jeu. Un S peut être représenté comme suit : 
  * 							##
  * 						   ##
  */

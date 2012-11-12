@@ -2,7 +2,7 @@ package fr.iutvalence.java.projets.tetris;
 // FIXME (FIXED) déplacer dans un paquetage
 
 /**
- * Définition de la zone de jeu dans sa globalité
+ * Définition de la zone de jeu dans sa globalité 
  * Chaque case de Map contient une Couleur, éventuellement RIEN.
  */
 public class Map

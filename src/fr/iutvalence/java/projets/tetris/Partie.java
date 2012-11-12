@@ -4,7 +4,7 @@ package fr.iutvalence.java.projets.tetris;
 
 // FIXME (FIXED) détailler le commentaire
 /**
- *
+ * 
  * Classe centrale de l'application : début du jeu 
  * TODO (différents selon des paramètrse choisis précédemment et fournis) 
  * affichage de la Map, des Formes, interaction avec le joueur 

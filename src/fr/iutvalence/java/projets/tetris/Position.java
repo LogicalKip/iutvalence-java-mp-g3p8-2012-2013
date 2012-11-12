@@ -2,7 +2,7 @@ package fr.iutvalence.java.projets.tetris;
 
 /**
  * @author duplanm
- *
+ * 
  */
 public class Position
 {

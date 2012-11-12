@@ -81,7 +81,7 @@ public abstract class Forme
 	
 	/**
 	 * Translation de la forme vers la droite, si possible.
-	 *  Une vérification préalable est INDISPENSABLE avant d'appeler la méthode.
+	 *  Une vérification préalable est INDISPENSABLE avant d'appeler la méthode. 
 	 */
 	// FIXME (FIXED) visibilité ?
 	public void translationDroite(){
