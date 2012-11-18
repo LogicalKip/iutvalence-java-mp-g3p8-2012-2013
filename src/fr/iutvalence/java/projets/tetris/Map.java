@@ -1,5 +1,4 @@
 package fr.iutvalence.java.projets.tetris;
-// FIXME (FIXED) déplacer dans un paquetage
 
 /**
  * Définition de la zone de jeu dans sa globalité 
@@ -51,5 +50,7 @@ public class Map
 		}
 		return s;
 	}
+	
+	//FIXME il faudra peut-être rajouter des méthodes permettant de modifier la couleur d'une case, d'éliminer les lignes pleines, ...
 	
 }

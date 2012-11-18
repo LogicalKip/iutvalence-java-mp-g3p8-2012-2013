@@ -1,7 +1,5 @@
 package fr.iutvalence.java.projets.tetris;
-// FIXME (FIXED) déplacer dans un paquetage
 
-// FIXME (FIXED) détailler le commentaire (expliquer en quoi F_Cube est une forme particulière)
 /**
  * Définit les différents mouvements possibles avec un cube, et comment ils interviennent dans
  * la zone de jeu.  Un Cube peut être représenté comme suit :  
@@ -10,7 +8,6 @@ package fr.iutvalence.java.projets.tetris;
  * @author duplanm
  * 
  */
-// FIXME (FIXED) respecter les conventions d'écriture
 public class Cube extends Forme
 {
 	/**

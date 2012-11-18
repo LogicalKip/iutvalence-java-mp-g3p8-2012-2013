@@ -1,8 +1,4 @@
 package fr.iutvalence.java.projets.tetris;
-
-// FIXME (FIXED) déplacer dans un paquetage 
-
-// FIXME (FIXED) détailler le commentaire (ce qui caractérise une forme)
 /**
  * 
  * Définition abstraite d'une forme. Une forme descend la zone de jeu, peut se translater
@@ -56,7 +52,6 @@ public abstract class Forme
 	 * Fait descendre la forme, d'un bloc, si possible.
 	 * Une vérification préalable est INDISPENSABLE avant d'appeler la méthode.
 	 */
-	// FIXME (FIXED) visibilité ?
 	public void descendre() {
 		this.hg.setY(this.hg.getY()+1);
 	};
@@ -64,7 +59,6 @@ public abstract class Forme
 	/**
 	 * Tourne la forme vers la droite, si possible (dépend de la forme en question).
 	 */
-	// FIXME (FIXED) visibilité ?
 	public void tourner()
 	{
 		this.representationCourante = (this.representationCourante + 1) % this.representations.length; 
@@ -74,7 +68,6 @@ public abstract class Forme
 	 * Translation de la forme vers la gauche, si possible.
 	 * Une vérification préalable est INDISPENSABLE avant d'appeler la méthode.
 	 */
-	// FIXME (FIXED) visibilité ?
 	public void translationGauche(){
 		this.hg.setX(this.hg.getX()-1);
 	};
@@ -83,7 +76,6 @@ public abstract class Forme
 	 * Translation de la forme vers la droite, si possible.
 	 *  Une vérification préalable est INDISPENSABLE avant d'appeler la méthode. 
 	 */
-	// FIXME (FIXED) visibilité ?
 	public void translationDroite(){
 		this.hg.setX(this.hg.getX()+1);
 	}

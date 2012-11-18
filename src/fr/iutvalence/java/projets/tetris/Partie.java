@@ -1,8 +1,5 @@
-// FIXME (FIXED) déplacer dans un paquetage
 package fr.iutvalence.java.projets.tetris;
 
-
-// FIXME (FIXED) détailler le commentaire
 /**
  *  
  * Classe centrale de l'application : début du jeu 
@@ -12,16 +9,12 @@ package fr.iutvalence.java.projets.tetris;
  */
 public class Partie
 {
+	// FIXME revoir le commentaire (à discuter)
 	/**
 	 * Appel de la classe Map avant initialisation et lancement de la partie
 	 */
-	// TODO (DONE) On peut déclarer cette variable comme une variable locale à start() ?
-	// FIXME (FIXED) (à discuter en séance)
 	public Map map;
 	
-	
-	
-	// FIXME (FIXED) détailler le commentaire
 	/**
 	 * Constructeur de la classe Partie
 	 * Crée une map vide avant l'initialisation et le lancement de la partie.
