@@ -23,11 +23,11 @@ public class TestForme
 		}
 	}
 	/**
-	 * @param args
+	 * @param args paramètres du test, en l'occurence aucun
 	 */
 	public static void main(String[] args)
 	{
-		Forme f = new LInverse(new Position(3,3));
+		Forme f = new T(new Position(3,3));
 		int tempsAttente = 500;
 		System.out.println(f);
 		attendre(tempsAttente);

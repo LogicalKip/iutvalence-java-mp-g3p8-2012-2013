@@ -17,8 +17,9 @@ public class Partie
 	 */
 	// TODO (DONE) On peut déclarer cette variable comme une variable locale à start() ?
 	// FIXME (FIXED) (à discuter en séance)
+	// TODO visibilité ?
 	public Map map;
-	
+	private Forme formeCourante;
 	
 	
 	// FIXME (FIXED) détailler le commentaire

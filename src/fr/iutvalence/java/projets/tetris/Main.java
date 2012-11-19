@@ -12,7 +12,7 @@ public class Main
 	/**
 	 * Fonction principale : Création et lancement d'une Partie (pour l'instant)
 	 * TODO Faire un menu contenant Jouer, Options, Quitter
-	 * @param args
+	 * @param args les differents arguments du main
 	 * 
 	 */
 	public static void main(String[] args)
@@ -20,13 +20,6 @@ public class Main
 		Partie jeu = new Partie();
 		
 		jeu.start();
-		
-		/*
-		 * ce serait pas plutôt tout simplement
-		 *  //while (rejouer())
-		 *  	 new Partie.start();
-		 *  	?
-		 */
 		jeu.map.toString();
 		
 	}
