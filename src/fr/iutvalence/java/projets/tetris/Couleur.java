@@ -1,5 +1,4 @@
 package fr.iutvalence.java.projets.tetris;
-// FIXME (FIXED) déplacer dans un paquetage
 /**
  * Enumération des différentes couleurs que peut avoir une forme, et éventuellement autre chose
  * @author duplanm

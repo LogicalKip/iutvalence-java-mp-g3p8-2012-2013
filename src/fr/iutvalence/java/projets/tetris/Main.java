@@ -1,4 +1,3 @@
-// FIXME (FIXED) déplacer dans un paquetage différent
 package fr.iutvalence.java.projets.tetris;
 
 /**
@@ -8,7 +7,6 @@ package fr.iutvalence.java.projets.tetris;
  */
 public class Main
 {
-	// FIXME (FIXED) compléter le commentaire
 	/**
 	 * Fonction principale : Création et lancement d'une Partie (pour l'instant)
 	 * TODO Faire un menu contenant Jouer, Options, Quitter
