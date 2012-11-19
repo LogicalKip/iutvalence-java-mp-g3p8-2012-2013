@@ -15,13 +15,9 @@ public class Partie
 	/**
 	 * Appel de la classe Map avant initialisation et lancement de la partie
 	 */
-	// TODO (DONE) On peut déclarer cette variable comme une variable locale à start() ?
-	// FIXME (FIXED) (à discuter en séance)
 	public Map map;
 	
 	
-	
-	// FIXME (FIXED) détailler le commentaire
 	/**
 	 * Constructeur de la classe Partie
 	 * Crée une map vide avant l'initialisation et le lancement de la partie.
@@ -37,6 +33,17 @@ public class Partie
 	public void start()
 	{
 		
+	}
+	
+	//TODO Commencer la méthode
+	/**
+	 * Renvoie une Forme aléatoire
+	 * @return renvoie la forme générée aléatoirement
+	 */
+	private Forme randForme()
+	{
+		Forme f = new Barre(new Position(1,1));
+		return f;
 	}
 }
 

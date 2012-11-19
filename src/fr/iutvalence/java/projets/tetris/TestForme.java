@@ -6,8 +6,6 @@ package fr.iutvalence.java.projets.tetris;
  */
 public class TestForme
 {
-
-
 	/**
 	 * @param ms nombre de millisecondes à attendre
 	 */
