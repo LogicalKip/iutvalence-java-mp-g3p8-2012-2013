@@ -1,8 +1,6 @@
-// FIXME (FIXED) déplacer dans un paquetage
 package fr.iutvalence.java.projets.tetris;
 
 
-// FIXME (FIXED) détailler le commentaire
 /**
  *  
  * Classe centrale de l'application : début du jeu 

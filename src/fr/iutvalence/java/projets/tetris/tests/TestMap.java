@@ -1,4 +1,7 @@
-package fr.iutvalence.java.projets.tetris;
+package fr.iutvalence.java.projets.tetris.tests;
+
+import fr.iutvalence.java.projets.tetris.Couleur;
+import fr.iutvalence.java.projets.tetris.Map;
 
 /**
  * @author duplanm

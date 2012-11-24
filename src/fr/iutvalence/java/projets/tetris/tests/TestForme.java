@@ -1,4 +1,4 @@
-package fr.iutvalence.java.projets.tetris;
+package fr.iutvalence.java.projets.tetris.tests;
 
 /**
  * Zone de test 
