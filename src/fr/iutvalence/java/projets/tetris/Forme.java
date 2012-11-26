@@ -49,6 +49,62 @@ public abstract class Forme
 	}
 	
 	/**
+	 * getter de color
+	 * @return renvoie la couleur de la forme
+	 */
+	public Couleur getColor()
+	{
+		return this.color;
+	}
+	
+	/**
+	 * getter de hg
+	 * @return retourne la position du bloc le plus en haut à gauche
+	 */
+	public Position getHg()
+	{
+		return this.hg;
+	}
+	
+	/**
+	 * getter de representations
+	 * @return renvoie la liste des positions
+	 */
+	public Position[][] getRepresentations()
+	{
+		return this.representations;
+	}
+	
+	/**
+	 * getter de representationCourante 
+	 * @return revoie la position courante de la forme
+	 */
+	public int getRepresentationCourante()
+	{
+		return this.representationCourante;
+	}
+	
+	/**
+	 * Renvoie le x du bloc n° numBloc demandé
+	 * @param numBloc Compris entre 0et 3
+	 * @return l'abscisse du bloc
+	 */
+	public int getXBloc(int numBloc)
+	{
+		return this.hg.getX() + this.representations[this.representationCourante][numBloc].getX();
+	}
+	
+	/**
+	 * Renvoie le y du bloc n° numBloc demandé
+	 * @param numBloc Compris entre 0et 3
+	 * @return l'ordonnée du bloc
+	 */
+	public int getYBloc(int numBloc)
+	{
+		return this.hg.getY() + this.representations[this.representationCourante][numBloc].getY();
+	}
+	
+	/**
 	 * Fait descendre la forme, d'un bloc, si possible.
 	 * Une vérification préalable est INDISPENSABLE avant d'appeler la méthode.
 	 */

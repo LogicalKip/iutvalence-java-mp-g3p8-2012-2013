@@ -60,16 +60,38 @@ public class Map
 	
 	
 	/**
-	 * POUR DEBUG : NE PAS UTILISER AUTREMENT
+	 * POUR DEBUG ET PRIVATE : NE PAS UTILISER AUTREMENT
+	 * TODO Remettre la portée à private une fois les besoins du debug terminés
 	 * @param x largeur
 	 * @param y hauteur
 	 * @param c couleur
 	 */
-	void setCouleur(int x, int y, Couleur c)
+	public void setCouleur(int x, int y, Couleur c)
 	{
 		this.zoneDeJeu[x][y] = c;
 	}
 	
+	/**
+	 * renvoie la couleur d'une case donnée
+	 * @param x abscisses
+	 * @param y ordonnées
+	 * @return la couleur à l'indice x,y
+	 */
+	public Couleur getCouleur(int x, int y)
+	{
+		return this.zoneDeJeu[x][y];
+	}
+	
+	/**
+	 * Considère les blocs qui composent la forme passée en paramètre comme "fixes", "sur la map"
+	 * Il faut IMPERATIVEMENT vérifier que la forme ne dépasse pas les limites de la map avant invocation
+	 * @param f la forme que l'on "appliquera" sur la map
+	 */
+	public void poserForme(Forme f)
+	{
+		for (int i = 0 ; i < 4 ; i++)
+			this.setCouleur(f.getXBloc(i), f.getYBloc(i), f.getColor());		
+	}
 	/**
 	 * Supprime les lignes pleines (eventuellement aucune) et descend toutes les lignes supérieures
 	 */
@@ -82,13 +104,13 @@ public class Map
 			lignePleine=true;
 			for(int colonne=0;colonne<LARGEUR_MAP;colonne++)
 			{ // On vérifie si la ligne est pleine
-				if(this.zoneDeJeu[colonne][ligneCour]==Couleur.RIEN)
+				if(this.getCouleur(colonne, ligneCour)==Couleur.RIEN)
 					lignePleine=false; // + break ?
 			}
 			if(lignePleine)
 			{
 				for(int colonne=0;colonne<LARGEUR_MAP;colonne++) // Supprimer la ligne				
-					this.zoneDeJeu[colonne][ligneCour] = Couleur.RIEN;				
+					this.setCouleur(colonne, ligneCour, Couleur.RIEN);			
 				
 				// Descendre tout d'un bloc :
 				/* Pour chaque ligne, depuis celle au-dessus de la détruite, jusqu'à la plus haute,
@@ -96,12 +118,12 @@ public class Map
 				   à la fin je supprime la plus haute. */
 				for (int i = ligneCour - 1 ; i >= 0 ; i--)
 				{
-					for (int colonne = 0 ; colonne < LARGEUR_MAP ; colonne++)					
-						this.zoneDeJeu[colonne][i + 1] = this.zoneDeJeu[colonne][i];					
+					for (int colonne = 0 ; colonne < LARGEUR_MAP ; colonne++)
+						this.setCouleur(colonne, i + 1, this.zoneDeJeu[colonne][i]);			
 				}
 				
 				for(int colonne=0;colonne<LARGEUR_MAP;colonne++) // Supprimer la ligne la plus haute				
-					this.zoneDeJeu[colonne][0] = Couleur.RIEN;				
+					this.setCouleur(colonne, 0, Couleur.RIEN);
 			}
 		}
 	}

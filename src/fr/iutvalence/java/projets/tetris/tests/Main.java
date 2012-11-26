@@ -1,4 +1,6 @@
-package fr.iutvalence.java.projets.tetris;
+package fr.iutvalence.java.projets.tetris.tests;
+
+import fr.iutvalence.java.projets.tetris.Partie;
 
 /**
  * Classe "executable", celle qui va lancer l'application

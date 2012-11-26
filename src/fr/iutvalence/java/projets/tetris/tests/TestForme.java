@@ -1,5 +1,9 @@
 package fr.iutvalence.java.projets.tetris.tests;
 
+import fr.iutvalence.java.projets.tetris.Forme;
+import fr.iutvalence.java.projets.tetris.Position;
+import fr.iutvalence.java.projets.tetris.T;
+
 /**
  * Zone de test 
  * @author duplanm
