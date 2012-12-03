@@ -52,17 +52,17 @@ public class Partie
 	 */
 	public void start()
 	{	
-	/*	for (int x = 0 ; x < Map.LARGEUR_MAP - 4; x++)// pour le test
+		for (int x = 0 ; x < Map.LARGEUR_MAP - 4; x++)// pour le test
 			{
 				this.map.setCouleur(x, Map.HAUTEUR_MAP - 1, Couleur.ORANGE);
 				this.map.setCouleur(x, Map.HAUTEUR_MAP - 2, Couleur.ORANGE);
 			}
-		this.map.setCouleur(0, Map.HAUTEUR_MAP - 3, Couleur.ORANGE);*/
+		this.map.setCouleur(0, Map.HAUTEUR_MAP - 3, Couleur.ORANGE);
 		
 		boolean perdu = false;
 		while (!perdu)
 		{
-			this.formeCourante = randForme(3, 1);
+			this.formeCourante = randForme(3, 2);
 			if (this.formeCourante != null)
 			{
 				while (this.peutBouger(this.formeCourante, Deplacements.BAS))
@@ -71,7 +71,7 @@ public class Partie
 					// récupérer choix utilisateur
 					// executer choix utilisateur (d,g,b,r)	
 					this.formeCourante.descendre();
-					Partie.attendre(100);
+					Partie.attendre(300);
 				}
 				this.map.poserForme(this.formeCourante);
 				this.formeCourante = null;
