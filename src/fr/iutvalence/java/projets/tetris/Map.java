@@ -90,7 +90,7 @@ public class Map
 	public void poserForme(Forme f)
 	{
 		for (int i = 0 ; i < 4 ; i++)
-			this.setCouleur(f.getXBloc(i), f.getYBloc(i), f.getColor());		
+			this.setCouleur(f.getXBloc(i), f.getYBloc(i), f.getColor());			
 	}
 	/**
 	 * Supprime les lignes pleines (eventuellement aucune) et descend toutes les lignes supérieures
